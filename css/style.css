@@ -7,13 +7,14 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
+* {
+  box-sizing: border-box;
+}
 
 html {
   margin: 0;
   padding: 0;
   padding-top: 16px;
-  box-sizing: border-box;
   height: 100%;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -367,6 +368,6 @@ template {
 .container {
   max-width: 1408px;
   width: 100%;
-
+  padding: 0 16px;
   margin: 0 auto;
 }
