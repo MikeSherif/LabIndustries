@@ -1,0 +1,138 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-top: 16px;
+  flex-shrink: 0;
+}
+
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+  background: #FFFFFF;
+  margin: 0 16px;
+}
+
+.header__link {
+  padding: 30px;
+  width: clamp(9.125rem, 5.1346rem + 15.9615vw, 19.5rem);
+  height: 60px;
+}
+
+.header__logo {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  position: fixed; /* фиксируем относительно окна */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  width: clamp(22.875rem, 22.5385rem + 1.3462vw, 23.75rem);
+}
+
+
+.login__title {
+  color: rgba(53, 53, 50, 1);
+  font-family: "Gogh", serif;
+  font-weight: 700;
+  font-size: 44px;
+  leading-trim: none;
+  line-height: 50px;
+  text-align: center;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.login__input {
+  box-sizing: border-box;
+  font-family: "Gogh", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  color: #353532;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 21px 24px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.07);
+  transition: 0.3s ease-in-out all;
+}
+
+.login__input:hover {
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  transition: 0.3s ease-in-out all;
+}
+
+
+
+.login__input:focus-visible, .login__input:focus, .login__input:focus-within {
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  outline: none;
+  transition: 0.3s ease-in-out all;
+}
+
+.login__button {
+  font-family: "Gogh", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+  border-radius: 999px;
+  padding: 21px 24px;
+  width: 100%;
+  cursor: pointer;
+  background: #b90028;
+  transition: 0.3s ease-in-out all;
+}
+
+.login__button:hover {
+  background: #99001c;
+  transition: 0.3s ease-in-out all;
+}
+
+.login__button:disabled {
+  background: #b90028;
+  opacity: 0.5;
+}
+
+.login__help-link {
+  font-family: "Gogh", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #5b5b5b;
+}
+
+

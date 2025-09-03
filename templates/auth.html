@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Авторизация</title>
+  <link href="https://fonts.cdnfonts.com/css/gogh" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body class="body">
+  <header class="header container">
+    <div class="header__wrapper">
+      <a href="#" class="header__link">
+        <img src="../img/logo.svg" class="header__logo" alt="Логотип компании LabIndustries">
+      </a>
+    </div>
+  </header>
+  <main class="main container">
+    <section class="login">
+      <h2 class="login__title">Войдите</h2>
+
+      <form class="login__form" action="#" method="POST">
+        <label class="login__field">
+          <input type="email" name="email" class="login__input" placeholder="Логин" required>
+        </label>
+
+        <label class="login__field">
+          <input type="password" name="password" class="login__input" placeholder="Пароль" required>
+        </label>
+
+        <button type="submit" class="login__button">Войти</button>
+      </form>
+
+      <a href="#" class="login__help-link">Где получить данные для входа?</a>
+    </section>
+  </main>
+</body>
+</html>
