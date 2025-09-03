@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-BlackItalic.eot');
+    src: local('Gogh Black Italic'), local('Gogh-BlackItalic'),
+        url('Gogh-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-BlackItalic.woff2') format('woff2'),
+        url('Gogh-BlackItalic.woff') format('woff'),
+        url('Gogh-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-Bold.eot');
+    src: local('Gogh Bold'), local('Gogh-Bold'),
+        url('Gogh-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-Bold.woff2') format('woff2'),
+        url('Gogh-Bold.woff') format('woff'),
+        url('Gogh-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh Book';
+    src: url('Gogh-BookItalic.eot');
+    src: local('Gogh Book Italic'), local('Gogh-BookItalic'),
+        url('Gogh-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-BookItalic.woff2') format('woff2'),
+        url('Gogh-BookItalic.woff') format('woff'),
+        url('Gogh-BookItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-BoldItalic.eot');
+    src: local('Gogh Bold Italic'), local('Gogh-BoldItalic'),
+        url('Gogh-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-BoldItalic.woff2') format('woff2'),
+        url('Gogh-BoldItalic.woff') format('woff'),
+        url('Gogh-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-Black.eot');
+    src: local('Gogh Black'), local('Gogh-Black'),
+        url('Gogh-Black.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-Black.woff2') format('woff2'),
+        url('Gogh-Black.woff') format('woff'),
+        url('Gogh-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh Book';
+    src: url('Gogh-Book.eot');
+    src: local('Gogh Book'), local('Gogh-Book'),
+        url('Gogh-Book.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-Book.woff2') format('woff2'),
+        url('Gogh-Book.woff') format('woff'),
+        url('Gogh-Book.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh Hairline';
+    src: url('Gogh-HairlineItalic.eot');
+    src: local('Gogh Hairline Italic'), local('Gogh-HairlineItalic'),
+        url('Gogh-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-HairlineItalic.woff2') format('woff2'),
+        url('Gogh-HairlineItalic.woff') format('woff'),
+        url('Gogh-HairlineItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-Regular.eot');
+    src: local('Gogh Regular'), local('Gogh-Regular'),
+        url('Gogh-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-Regular.woff2') format('woff2'),
+        url('Gogh-Regular.woff') format('woff'),
+        url('Gogh-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-LightItalic.eot');
+    src: local('Gogh Light Italic'), local('Gogh-LightItalic'),
+        url('Gogh-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-LightItalic.woff2') format('woff2'),
+        url('Gogh-LightItalic.woff') format('woff'),
+        url('Gogh-LightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-Heavy.eot');
+    src: local('Gogh Heavy'), local('Gogh-Heavy'),
+        url('Gogh-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-Heavy.woff2') format('woff2'),
+        url('Gogh-Heavy.woff') format('woff'),
+        url('Gogh-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-Medium.eot');
+    src: local('Gogh Medium'), local('Gogh-Medium'),
+        url('Gogh-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-Medium.woff2') format('woff2'),
+        url('Gogh-Medium.woff') format('woff'),
+        url('Gogh-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-ExtraBold.eot');
+    src: local('Gogh Extra Bold'), local('Gogh-ExtraBold'),
+        url('Gogh-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-ExtraBold.woff2') format('woff2'),
+        url('Gogh-ExtraBold.woff') format('woff'),
+        url('Gogh-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh Hairline';
+    src: url('Gogh-Hairline.eot');
+    src: local('Gogh Hairline'), local('Gogh-Hairline'),
+        url('Gogh-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-Hairline.woff2') format('woff2'),
+        url('Gogh-Hairline.woff') format('woff'),
+        url('Gogh-Hairline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-HeavyItalic.eot');
+    src: local('Gogh Heavy Italic'), local('Gogh-HeavyItalic'),
+        url('Gogh-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-HeavyItalic.woff2') format('woff2'),
+        url('Gogh-HeavyItalic.woff') format('woff'),
+        url('Gogh-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-ExtraBoldItalic.eot');
+    src: local('Gogh Extra Bold Italic'), local('Gogh-ExtraBoldItalic'),
+        url('Gogh-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-ExtraBoldItalic.woff2') format('woff2'),
+        url('Gogh-ExtraBoldItalic.woff') format('woff'),
+        url('Gogh-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-Light.eot');
+    src: local('Gogh Light'), local('Gogh-Light'),
+        url('Gogh-Light.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-Light.woff2') format('woff2'),
+        url('Gogh-Light.woff') format('woff'),
+        url('Gogh-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-MediumItalic.eot');
+    src: local('Gogh Medium Italic'), local('Gogh-MediumItalic'),
+        url('Gogh-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-MediumItalic.woff2') format('woff2'),
+        url('Gogh-MediumItalic.woff') format('woff'),
+        url('Gogh-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-RegularItalic.eot');
+    src: local('Gogh Regular Italic'), local('Gogh-RegularItalic'),
+        url('Gogh-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-RegularItalic.woff2') format('woff2'),
+        url('Gogh-RegularItalic.woff') format('woff'),
+        url('Gogh-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-Thin.eot');
+    src: local('Gogh Thin'), local('Gogh-Thin'),
+        url('Gogh-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-Thin.woff2') format('woff2'),
+        url('Gogh-Thin.woff') format('woff'),
+        url('Gogh-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('Gogh-ThinItalic.eot');
+    src: local('Gogh Thin Italic'), local('Gogh-ThinItalic'),
+        url('Gogh-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gogh-ThinItalic.woff2') format('woff2'),
+        url('Gogh-ThinItalic.woff') format('woff'),
+        url('Gogh-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
