@@ -183,9 +183,13 @@
 }
 
 .info__slogan {
-  margin: auto;
-  padding-bottom: 42px;
+  margin: 0 auto 42px auto;
+  height: 46px;
   width: clamp(368px, calc(368px + (426 - 368) * ((100vw - 400px) / (1440 - 400))), 426px);
+  background-image: url("../img/slogan.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* тянем по ширине и высоте */   /* растягивает по ширине и высоте контейнера */
+  background-position: center; /* центрирует изображение */
 }
 
 .info__slogan-img {
@@ -211,6 +215,12 @@
 
   .mobile {
     display: block;
+  }
+
+  .info__slogan {
+    background-image: url("../img/slogan_mobile.svg");
+    height: 40px;
+    width: 100%;
   }
 }
 
