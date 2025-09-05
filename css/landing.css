@@ -144,7 +144,12 @@
   color: #353532;
   opacity: 0.75;
   white-space: pre;
+  overflow-wrap: break-word;
   margin-top: 12px;
+}
+
+.card__description-first {
+  /*width: 193px;*/
 }
 
 .card__description-second, .card__description-third {
@@ -172,16 +177,36 @@
   display: none;
 }
 
+.info__button {
+  width: 300px;
+  margin: 16px auto;
+}
+
+.info__slogan {
+  margin: auto;
+  padding-bottom: 42px;
+  width: clamp(368px, calc(368px + (426 - 368) * ((100vw - 400px) / (1440 - 400))), 426px);
+}
+
+.info__slogan-img {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   html {
     overflow-x: hidden;
   }
   .list__item {
     width: 100%;
+    padding: 16px;
   }
 
-  .card__img-first {
+  .card__img, .card__description {
     display: none;
+  }
+
+  .card__img-second {
+    right: 0;
   }
 
   .mobile {
