@@ -54,6 +54,10 @@
   width: clamp(30.3125rem, 23.8221rem + 25.9615vw, 47.1875rem);
 }
 
+.hero__img-mobile {
+  display: none;
+}
+
 .info {
   margin-top: 160px;
   display: flex;
@@ -200,6 +204,7 @@
   html {
     overflow-x: hidden;
   }
+
   .list__item {
     width: 100%;
     padding: 16px;
@@ -217,10 +222,24 @@
     display: block;
   }
 
+
   .info__slogan {
     background-image: url("../img/slogan_mobile.svg");
     height: 40px;
     width: 100%;
+  }
+}
+
+@media (max-width : 576px) {
+  .hero__img {
+    display: none;
+  }
+
+  .hero__img-mobile {
+    display: block;
+    top: 180px;
+    right: -15px;
+    width: 385px;
   }
 }
 
