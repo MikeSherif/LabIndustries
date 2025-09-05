@@ -239,11 +239,15 @@
     display: block;
     top: 180px;
     right: -15px;
-    width: 365px;
+    width: 385px;
   }
 }
 
 @media (max-width: 400px) {
+  .hero__img-mobile {
+    width: 365px;
+  }
+
   .card__description {
     width: 150px;
     white-space: unset;
