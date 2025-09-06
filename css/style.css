@@ -36,7 +36,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 16px;
   overflow-x: hidden;
 }
 
@@ -377,8 +377,8 @@ template {
 .container {
   max-width: 1408px;
   width: 100%;
-  padding: 0 16px;
   margin: 0 auto;
+  /*padding: 0 16px;*/
 }
 
 .empty {
@@ -448,6 +448,8 @@ template {
 .header__button-icon {
   display: none;
 }
+
+
 
 @media (max-width: 768px) {
   html {
