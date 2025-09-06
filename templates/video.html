@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Авторизация</title>
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/video.css">
+</head>
+<body>
+<header class="header container">
+  <div class="header__wrapper">
+    <a href="#" class="header__link">
+      <img src="../img/logo.svg" class="header__logo" alt="Логотип компании LabIndustries">
+    </a>
+    <button class="header__button button accent_button">
+      <span class="header__button-text">Загрузить поздравление</span>
+      <img src="../img/icon.svg" alt="Иконка кнопки загрузить поздравления" class="header__button-icon">
+    </button>
+  </div>
+</header>
+<main class="main container">
+  <!-- Slider main container -->
+  <section class="video">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <video class="swiper-slide-video"  autoplay loop src="../files/video.mp4"></video>
+        </div>
+        <div class="swiper-slide">
+          <video class="swiper-slide-video"  autoplay loop src="../files/video2.mp4"></video>
+        </div>
+        <div class="swiper-slide">
+          slide
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="button-wrapper">
+        <div class="button-prev swiper-button accent_button">
+          <img src="../img/button_prev_img.svg" alt="Картинка кнопки предыдущее видео">
+        </div>
+        <div class="button-next swiper-button accent_button">
+          <img src="../img/button_next_img.svg" alt="Картинка кнопки следующее видео">
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module" src="../js/video.js"></script>
+</body>
+</html>
