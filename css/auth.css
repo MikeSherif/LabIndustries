@@ -26,7 +26,7 @@
   color: rgba(53, 53, 50, 1);
   font-family: "Gogh", serif;
   font-weight: 700;
-  font-size: 44px;
+  font-size: clamp(2rem, 1.7115rem + 1.1538vw, 2.75rem);
   leading-trim: none;
   line-height: 50px;
   text-align: center;

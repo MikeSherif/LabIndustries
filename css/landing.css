@@ -66,7 +66,7 @@
 }
 
 .info__title {
-  font-size: 44px;
+  font-size: clamp(2rem, 1.7115rem + 1.1538vw, 2.75rem);
   font-weight: bold;
   color: #353532;
 }
@@ -200,6 +200,12 @@
   width: 100%;
 }
 
+@media (min-width: 1200px) {
+  section {
+    padding: 0 28px;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     overflow-x: hidden;
@@ -248,9 +254,19 @@
     width: 365px;
   }
 
+  .card__img-first, .card__img-third {
+    right: clamp(-15px, -150px + 0.375vw, 0px);
+  }
+
   .card__description {
     width: 150px;
     white-space: unset;
+  }
+}
+
+@media (max-width: 380px) {
+  .card__img-second {
+    width: 160px;
   }
 }
 
