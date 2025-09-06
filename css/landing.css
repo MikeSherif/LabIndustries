@@ -173,6 +173,7 @@
 }
 
 .card__img-second {
+  /*height: clamp(14.375rem, -7.5rem + 29.1667vw, 18.75rem);*/
   bottom: -20px;
   right: -20px;
 }
@@ -200,9 +201,21 @@
   width: 100%;
 }
 
-@media (min-width: 1200px) {
+@media (1200px <= width <= 1366px) {
   section {
     padding: 0 28px;
+  }
+
+  .list__item {
+    width: clamp(22.8125rem, -2.1875rem + 33.3333vw, 27.8125rem);
+  }
+
+  .card__img-first, .card__img-third {
+    right: clamp(-65px, -390.2px + 0.271vw, 0px);
+  }
+
+  .card__img-second {
+    height: clamp(14.375rem, -7.5rem + 29.1667vw, 18.75rem);
   }
 }
 
