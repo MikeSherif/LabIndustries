@@ -23,12 +23,12 @@
 }
 
 .login__title {
-  color: rgba(53, 53, 50, 1);
-  font-family: "Gogh", serif;
-  font-weight: 700;
+  color: #353532;
+  font-family: "Gogh-ExtraBold", sans-serif;
+  font-weight: bold;
   font-size: clamp(2rem, 1.7115rem + 1.1538vw, 2.75rem);
-  leading-trim: none;
-  line-height: 50px;
+  line-height: 114%;
+  letter-spacing: -0.01em;
   text-align: center;
 }
 
@@ -38,16 +38,23 @@
   gap: 12px;
   width: 100%;
 }
+
+.login__field {
+  height: fit-content;
+}
+
 .login__input {
   box-sizing: border-box;
   font-family: "Gogh", sans-serif;
-  font-weight: 200;
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: -0.01em;
+  line-height: 1.5;
   color: #353532;
   border: 1px solid transparent;
   border-radius: 999px;
-  padding: 21px 24px;
+  padding: 19px 24px;
   width: 100%;
   background: rgba(0, 0, 0, 0.07);
   transition: 0.3s ease-in-out all;
@@ -57,8 +64,6 @@
   border: 1px solid rgba(0, 0, 0, 0.18);
   transition: 0.3s ease-in-out all;
 }
-
-
 
 .login__input:focus-visible, .login__input:focus, .login__input:focus-within {
   border: 1px solid rgba(0, 0, 0, 0.18);
@@ -70,11 +75,10 @@
   width: 100%;
 }
 
-
-
 .login__help-link {
   font-family: "Gogh", sans-serif;
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: -0.01em;
   text-decoration: underline;

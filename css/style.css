@@ -416,7 +416,8 @@ template {
 
 .button {
   font-family: "Gogh", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   color: #fff;
   display: flex;
