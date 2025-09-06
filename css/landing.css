@@ -193,7 +193,7 @@
   width: clamp(368px, calc(368px + (426 - 368) * ((100vw - 400px) / (1440 - 400))), 426px);
   background-image: url("../img/slogan.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%; /* тянем по ширине и высоте */   /* растягивает по ширине и высоте контейнера */
+  background-size: 100% 100%; /* тянем по ширине и высоте */ /* растягивает по ширине и высоте контейнера */
   background-position: center; /* центрирует изображение */
 }
 
@@ -201,17 +201,19 @@
   width: 100%;
 }
 
-@media (1200px <= width <= 1366px) {
+@media (min-width: 1200px) {
   section {
     padding: 0 28px;
   }
+}
 
+@media (1200px <= width <= 1440px) {
   .list__item {
     width: clamp(22.8125rem, -2.1875rem + 33.3333vw, 27.8125rem);
   }
 
   .card__img-first, .card__img-third {
-    right: clamp(-65px, -390.2px + 0.271vw, 0px);
+    right: clamp(-4.0625rem, -24.375rem + 27.0833vw, 0rem);
   }
 
   .card__img-second {
@@ -249,7 +251,7 @@
   }
 }
 
-@media (max-width : 576px) {
+@media (max-width: 576px) {
   .hero__img {
     display: none;
   }
