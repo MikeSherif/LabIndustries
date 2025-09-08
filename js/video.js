@@ -147,4 +147,10 @@ class VideoSwiperManager {
 
 document.addEventListener('DOMContentLoaded', () => {
   new VideoSwiperManager();
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+  if (isSafari) {
+    document.body.paddingBottom = "30px";
+  }
+
 });
