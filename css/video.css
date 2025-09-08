@@ -122,11 +122,11 @@ body {
 @media (max-width: 768px) {
 
   body {
-    padding-bottom: env(safe-area-inset-bottom);
+    height: 100dvh;
   }
 
   .main {
-    height: calc(100vh - 98px);
+    height: calc(100dvh - 98px);
   }
 
   /*.swiper {*/
