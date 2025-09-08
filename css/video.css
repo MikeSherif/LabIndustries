@@ -194,3 +194,9 @@ body {
     transform: translate(50%, 0%);
   }
 }
+
+@media (max-width: 400px) {
+  .status {
+    width: 95%;
+  }
+}
