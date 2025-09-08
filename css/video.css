@@ -129,10 +129,9 @@ body {
     height: calc(100dvh - 98px);
   }
 
-  /*.swiper {*/
-  /*  margin-top: 16px;*/
-  /*  height: 80%;*/
-  /*}*/
+  .swiper {
+    padding-top: 16px;
+  }
 
   .swiper-slide {
     max-width: 368px;
