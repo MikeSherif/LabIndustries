@@ -38,7 +38,7 @@ class VideoSwiperManager {
         btn.classList.toggle('unmuted', !video.muted);
 
         btn.addEventListener('click', (e) => {
-          e.stopPropagation(); // чтобы клик по кнопке не трогал видео
+          e.stopPropagation();
           this.toggleVolume(index);
         });
       }
@@ -87,7 +87,6 @@ class VideoSwiperManager {
     }
   }
 
-  // === Новый метод для кнопки громкости ===
   toggleVolume(index) {
     const video = this.videos[index];
     const btn = this.volumeButtons[index];
