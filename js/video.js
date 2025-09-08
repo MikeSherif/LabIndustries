@@ -28,9 +28,7 @@ function handleVideos() {
   const videos = document.querySelectorAll('.swiper-slide-video');
   videos.forEach((video, index) => {
     if (index === swiper.activeIndex) {
-      video.play().catch(() => {
-        console.log('autoplay blocked by browser');
-      });
+
     } else {
       video.pause();
     }
