@@ -147,10 +147,11 @@ class VideoSwiperManager {
 
 document.addEventListener('DOMContentLoaded', () => {
   new VideoSwiperManager();
-  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-  if (isSafari) {
-    document.body.paddingBottom = "30px";
-  }
+  new ResizeObserver((entries) => {
+    entries.forEach((entry) => {
+      //const windowFullHeight = parseFloat(window.outerHeight);
+      document.documentElement.style.setProperty("--webkit-footer-gap", `${entry.contentRect.height}px`);
+    });
+  }).observe(document.querySelector(".webkit-gap"));
 
 });
