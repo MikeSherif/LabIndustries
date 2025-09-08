@@ -386,11 +386,7 @@ template {
 }
 
 .header {
-  /*margin-top: 16px;*/
-  /*position: fixed;*/
-  /*top: 16px;*/
-  /*left: 50%;*/
-  /*transform: translate(-50%, 0);*/
+
 }
 
 .header__wrapper {
@@ -449,8 +445,6 @@ template {
 .header__button-icon {
   display: none;
 }
-
-
 
 @media (max-width: 768px) {
   html {
