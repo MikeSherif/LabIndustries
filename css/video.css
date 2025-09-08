@@ -53,6 +53,7 @@ body {
   gap: 8px;
   bottom: 16px;
   left: 16px;
+  z-index: 2;
 }
 
 .like__icon {
