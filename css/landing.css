@@ -212,7 +212,7 @@
   }
 }
 
-@media (1200px <= width <= 1440px) {
+@media (min-width:1200px) and (max-width:1440px) {
   .list__item {
     width: clamp(22.8125rem, -2.1875rem + 33.3333vw, 27.8125rem);
   }

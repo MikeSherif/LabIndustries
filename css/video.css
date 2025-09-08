@@ -54,13 +54,10 @@ body {
   bottom: 16px;
   left: 16px;
   z-index: 2;
-}
-
-.like__icon {
   cursor: pointer;
 }
 
-.like__icon-wrapper .heart {
+.like__icon-wrapper .heart:default {
   transition: 0.2s ease-in-out all;
 }
 
@@ -72,6 +69,7 @@ body {
 .liked {
   stroke: #B90028;
   fill: #B90028;
+  transition: 0.2s ease-in-out all;
 }
 
 .like__count {
