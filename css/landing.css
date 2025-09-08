@@ -39,6 +39,11 @@
   background: #FFFFFF;
 }
 
+.hero__button:hover {
+  background: #E9E9E9;
+  transition: 0.3s ease-in-out all;
+}
+
 .hero__img {
   position: absolute;
   top: clamp(-80px,

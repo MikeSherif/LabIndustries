@@ -45,6 +45,40 @@ body {
   border-radius: 32px;
 }
 
+.like {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  bottom: 16px;
+  left: 16px;
+}
+
+.like__icon {
+  cursor: pointer;
+}
+
+.like__icon-wrapper .heart {
+  transition: 0.2s ease-in-out all;
+}
+
+.like__icon-wrapper:hover .heart {
+  stroke: #B90028;
+  transition: 0.2s ease-in-out all;
+}
+
+.liked {
+  stroke: #B90028;
+  fill: #B90028;
+}
+
+.like__count {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
 .button-wrapper {
   display: flex;
   flex-direction: column;

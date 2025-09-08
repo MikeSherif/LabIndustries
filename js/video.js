@@ -14,3 +14,13 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
   centeredSlides: true,
 });
+
+const likes = document.querySelectorAll('.like');
+likes.forEach(like => {
+  like.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const heart = e.currentTarget.querySelector('.heart');
+    heart.classList.toggle('liked');
+  })
+})
+
