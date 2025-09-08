@@ -3,12 +3,15 @@ class VideoSwiperManager {
     this.swiper = null;
     this.videos = [];
     this.likes = [];
+    this.volumeButtons = [];
     this.init();
   }
 
   init() {
     this.videos = document.querySelectorAll('.swiper-slide-video');
     this.likes = document.querySelectorAll('.like');
+    this.volumeButtons = document.querySelectorAll('.volume-toggle'); // <-- добавлено
+
     this.swiper = new Swiper('.swiper', {
       direction: 'vertical',
       navigation: {
@@ -26,8 +29,19 @@ class VideoSwiperManager {
 
     this.updateVideoState();
 
-    this.videos.forEach(video => {
+    this.videos.forEach((video, index) => {
       video.addEventListener('click', this.toggleVideoPlayPause.bind(this));
+
+      // синхронизация кнопки громкости при инициализации
+      const btn = this.volumeButtons[index];
+      if (btn) {
+        btn.classList.toggle('unmuted', !video.muted);
+
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation(); // чтобы клик по кнопке не трогал видео
+          this.toggleVolume(index);
+        });
+      }
     });
 
     this.likes.forEach(like => {
@@ -46,7 +60,7 @@ class VideoSwiperManager {
   pauseAllVideos() {
     this.videos.forEach(video => {
       video.pause();
-      video.currentTime = 0; // Перемотка на начало
+      video.currentTime = 0;
     });
   }
 
@@ -61,6 +75,31 @@ class VideoSwiperManager {
       video.play().catch(error => console.error('Ошибка проигрывания видео:', error));
     } else {
       video.pause();
+    }
+
+    if (video.muted) {
+      video.muted = false;
+
+      // обновляем кнопку при клике на видео
+      const index = Array.from(this.videos).indexOf(video);
+      const btn = this.volumeButtons[index];
+      if (btn) btn.classList.add('unmuted');
+    }
+  }
+
+  // === Новый метод для кнопки громкости ===
+  toggleVolume(index) {
+    const video = this.videos[index];
+    const btn = this.volumeButtons[index];
+
+    if (!video || !btn) return;
+
+    video.muted = !video.muted;
+    btn.classList.toggle('unmuted', !video.muted);
+
+    // если видео было на паузе и звук включили — можно воспроизвести его
+    if (!video.muted && video.paused) {
+      video.play().catch(err => console.error(err));
     }
   }
 

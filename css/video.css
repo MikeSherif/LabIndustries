@@ -78,6 +78,23 @@ body {
   color: #fff;
 }
 
+.volume-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  background: url('../img/volume_off.svg') center/contain no-repeat;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.volume-toggle.unmuted {
+  background: url('../img/volume_up.svg') center/contain no-repeat;
+}
+
+
 .button-wrapper {
   display: flex;
   flex-direction: column;
