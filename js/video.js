@@ -65,19 +65,19 @@ class VideoSwiperManager {
   }
 
   handleLikeClick(event) {
-    event.stopPropagation(); // Предотвращаем всплытие события
+    event.stopPropagation();
     const likeElement = event.currentTarget;
     const heart = likeElement.querySelector('.heart');
     const countSpan = likeElement.querySelector('.like__count');
-    const videoId = likeElement.closest('.swiper-slide').dataset.videoId; // Предполагаем, что у слайда есть data-videoId
+    const videoId = likeElement.closest('.swiper-slide').dataset.videoId;
 
     const isLiked = heart.classList.contains('liked');
     const likeMethod = isLiked ? this.unlikeVideo : this.likeVideo;
 
     likeMethod(videoId)
       .then(response => {
-        countSpan.textContent = response.likes; // Обновляем счетчик
-        heart.classList.toggle('liked'); // Переключаем класс
+        countSpan.textContent = response.likes;
+        heart.classList.toggle('liked');
       })
       .catch(error => console.error('Ошибка при обработке лайка:', error));
   }
