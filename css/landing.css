@@ -316,6 +316,12 @@
 }
 
 @media (max-width: 380px) {
+  .list__item {
+    max-width: 343px;
+    padding: 16px;
+    transform: translateY(0);
+  }
+
   .card__img-second {
     width: 160px;
   }
