@@ -93,18 +93,28 @@
   border-radius: 32px;
   overflow: hidden;
   flex-grow: 1;
+
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.list__item.animate {
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .list__item:nth-child(1) {
   background-color: #C0D1E1;
+  animation-delay: 0.2s;
 }
 
 .list__item:nth-child(2) {
   background-color: #FF8001;
+  animation-delay: 0.6s;
 }
 
 .list__item:nth-child(3) {
   background-color: #59B582;
+  animation-delay: 1s;
 }
 
 .card {
@@ -204,6 +214,17 @@
 
 .info__slogan-img {
   width: 100%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 1200px) {
