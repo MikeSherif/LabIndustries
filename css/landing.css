@@ -255,6 +255,7 @@
   .list__item {
     width: 100%;
     padding: 16px;
+    transform: translateY(0);
   }
 
   .card__img, .card__description {
@@ -274,6 +275,15 @@
     background-image: url("../img/slogan_mobile.svg");
     height: 40px;
     width: 100%;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
