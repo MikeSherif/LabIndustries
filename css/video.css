@@ -84,14 +84,14 @@ body {
   right: 16px;
   width: 32px;
   height: 32px;
-  background: url('../img/volume_off.svg') center/contain no-repeat;
-  opacity: 0.7;
+  background: url('../img/charm_sound-mute.svg') center/contain no-repeat;
+  opacity: 0.5;
   cursor: pointer;
   z-index: 10;
 }
 
 .volume-toggle.unmuted {
-  background: url('../img/volume_up.svg') center/contain no-repeat;
+  background: url('../img/charm_sound-up.svg') center/contain no-repeat;
 }
 
 
@@ -110,12 +110,17 @@ body {
 .swiper-button {
   height: 40px;
   width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #B90028;
   border-radius: 50%;
   transition: 0.3s ease-in-out all;
+}
+
+.button-prev-img {
+  margin: 15px 12px 17px 12px;
+}
+
+.button-next-img {
+  margin: 17px 12px 15px 12px;
 }
 
 .status {
