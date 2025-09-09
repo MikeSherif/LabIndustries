@@ -3,6 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const emailInput = form.querySelector('input[name="email"]');
   const passwordInput = form.querySelector('input[name="password"]');
   const validationBox = form.querySelector(".login__validation");
+  const helpLink = document.querySelector(".login__help-link");
+  const tooltip = document.querySelector(".login__tooltip");
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (helpLink && tooltip && isMobile) {
+    helpLink.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      tooltip.classList.add("active");
+
+      setTimeout(() => {
+        tooltip.classList.remove("active");
+      }, 4000);
+    });
+  }
 
   async function sendLoginRequest(email, password) {
     try {
