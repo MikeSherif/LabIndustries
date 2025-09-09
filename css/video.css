@@ -85,7 +85,6 @@ body {
   width: 32px;
   height: 32px;
   background: url('../img/charm_sound-mute.svg') center/contain no-repeat;
-  opacity: 0.5;
   cursor: pointer;
   z-index: 10;
 }

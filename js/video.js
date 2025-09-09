@@ -147,11 +147,4 @@ class VideoSwiperManager {
 
 document.addEventListener('DOMContentLoaded', () => {
   new VideoSwiperManager();
-  new ResizeObserver((entries) => {
-    entries.forEach((entry) => {
-      //const windowFullHeight = parseFloat(window.outerHeight);
-      document.documentElement.style.setProperty("--webkit-footer-gap", `${entry.contentRect.height}px`);
-    });
-  }).observe(document.querySelector(".webkit-gap"));
-
 });
