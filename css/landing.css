@@ -95,7 +95,7 @@
   flex-grow: 1;
 
   opacity: 0;
-  transform: translateY(20px);
+  /*transform: translateY(20px);*/
 }
 
 .list__item.animate {
@@ -246,6 +246,10 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .list__item {
+    transform: translateY(20px);
   }
 }
 
