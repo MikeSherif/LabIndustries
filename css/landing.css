@@ -208,23 +208,12 @@
   width: clamp(368px, calc(368px + (426 - 368) * ((100vw - 400px) / (1440 - 400))), 426px);
   background-image: url("../img/slogan.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%; /* тянем по ширине и высоте */ /* растягивает по ширине и высоте контейнера */
-  background-position: center; /* центрирует изображение */
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 .info__slogan-img {
   width: 100%;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media (min-width: 1200px) {
@@ -244,6 +233,19 @@
 
   .card__img-second {
     height: clamp(14.375rem, -7.5rem + 29.1667vw, 18.75rem);
+  }
+}
+
+@media (min-width: 769px) {
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
