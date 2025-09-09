@@ -8,13 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
   if (helpLink && tooltip && isMobile) {
+    tooltip.classList.add("hidden");
     helpLink.addEventListener("click", (e) => {
       e.preventDefault();
-
+      tooltip.classList.remove("hidden");
       tooltip.classList.add("active");
 
       setTimeout(() => {
         tooltip.classList.remove("active");
+        tooltip.classList.add("hidden");
       }, 4000);
     });
   }

@@ -152,6 +152,12 @@
   transform: translateY(0);
 }
 
+.login__tooltip.hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: translateY(10px) !important;
+}
+
 
 .login__tooltip-title {
   font-family: "Gogh-ExtraBold", sans-serif;
