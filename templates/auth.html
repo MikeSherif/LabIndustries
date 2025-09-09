@@ -21,8 +21,7 @@
   <main class="main container">
     <section class="login">
       <h2 class="login__title">Войдите</h2>
-
-      <form class="login__form" action="#" method="POST">
+      <form class="login__form" action="#" method="POST" novalidate>
         <label class="login__field">
           <input type="email" name="email" class="login__input" placeholder="Логин" required>
         </label>
@@ -30,12 +29,14 @@
         <label class="login__field">
           <input type="password" name="password" class="login__input" placeholder="Пароль" required>
         </label>
-
+        <div class="login__validation">
+          <p class="login__validation-text">Проверьте правильность введенных данных</p>
+        </div>
         <button type="submit" class="login__button button accent_button">Войти</button>
       </form>
-
       <a href="#" class="login__help-link">Где получить данные для входа?</a>
     </section>
   </main>
+<script src="../js/auth.js"></script>
 </body>
 </html>
