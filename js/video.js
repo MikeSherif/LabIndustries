@@ -4,6 +4,7 @@ class VideoSwiperManager {
     this.videos = [];
     this.likes = [];
     this.volumeButtons = [];
+    this.isMuted = true;
     this.init();
   }
 
@@ -88,19 +89,24 @@ class VideoSwiperManager {
   }
 
   toggleVolume(index) {
-    const video = this.videos[index];
-    const btn = this.volumeButtons[index];
+    this.isMuted = !this.isMuted;
 
-    if (!video || !btn) return;
+    this.videos.forEach((video, i) => {
+      video.muted = this.isMuted;
+    });
 
-    video.muted = !video.muted;
-    btn.classList.toggle('unmuted', !video.muted);
+    this.volumeButtons.forEach((btn) => {
+      btn.classList.toggle('unmuted', !this.isMuted);
+    });
 
-    // если видео было на паузе и звук включили — можно воспроизвести его
-    if (!video.muted && video.paused) {
-      video.play().catch(err => console.error(err));
+    // если включили звук и активное видео на паузе — воспроизвести
+    const activeSlide = this.swiper.slides[this.swiper.activeIndex];
+    const activeVideo = activeSlide.querySelector('.swiper-slide-video');
+    if (!this.isMuted && activeVideo && activeVideo.paused) {
+      activeVideo.play().catch(err => console.error(err));
     }
   }
+
 
   handleLikeClick(event) {
     event.stopPropagation();
