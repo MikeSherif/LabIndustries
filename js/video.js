@@ -5,13 +5,17 @@ class VideoSwiperManager {
     this.likes = [];
     this.volumeButtons = [];
     this.isMuted = true;
+    this.uploadBtn = null;
+    this.uploadBlock = null;
     this.init();
   }
 
   init() {
     this.videos = document.querySelectorAll('.swiper-slide-video');
     this.likes = document.querySelectorAll('.like');
-    this.volumeButtons = document.querySelectorAll('.volume-toggle'); // <-- добавлено
+    this.volumeButtons = document.querySelectorAll('.volume-toggle');
+    this.uploadBtn = document.querySelector('.header__button');
+    this.uploadBlock = document.querySelector('.header__upload');
 
     this.swiper = new Swiper('.swiper', {
       direction: 'vertical',
@@ -29,11 +33,34 @@ class VideoSwiperManager {
     });
 
     this.updateVideoState();
+    this.initVideoEvents()
+    this.initLikeEvents();
+    this.initUploadEvents();
+  }
 
+  initUploadEvents() {
+    if (!this.uploadBtn || !this.uploadBlock) return;
+
+    this.uploadBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.uploadBlock.classList.toggle('active');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (
+        this.uploadBlock.classList.contains('active') &&
+        !this.uploadBlock.contains(e.target) &&
+        !this.uploadBtn.contains(e.target)
+      ) {
+        this.uploadBlock.classList.remove('active');
+      }
+    });
+  }
+
+  initVideoEvents() {
     this.videos.forEach((video, index) => {
       video.addEventListener('click', this.toggleVideoPlayPause.bind(this));
 
-      // синхронизация кнопки громкости при инициализации
       const btn = this.volumeButtons[index];
       if (btn) {
         btn.classList.toggle('unmuted', !video.muted);
@@ -44,7 +71,9 @@ class VideoSwiperManager {
         });
       }
     });
+  }
 
+  initLikeEvents() {
     this.likes.forEach(like => {
       like.addEventListener('click', this.handleLikeClick.bind(this));
     });
